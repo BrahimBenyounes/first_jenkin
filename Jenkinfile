@@ -18,7 +18,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your project from the source control
-               checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/gpalve/first_jenkin_pipeline_example.git']]])
+               checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/BrahimBenyounes/first_jenkin.git']]])
             }
         }
 
